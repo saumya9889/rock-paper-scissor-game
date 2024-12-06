@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&family=Roboto:wght@400;500;700&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #89c15e;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#gameRule {
+	background-color: #004429;
+	width: 350px;
+	height: 420px;
+	padding: 20px;
+	color: white;
+	display: none;
+	/* align-items: center; */
+	justify-content: center;
+	flex-direction: column;
+	position: fixed;
+	right: 80px;
+	bottom: 120px;
+	border: 7px solid #fff;
+	border-radius: 13px;
+}
+#gameRule h1 {
+	font-size: 29px;
+	text-align: center;
+	margin: 5px 0;
+	font-weight: 600;
+}
+
+#gameRule ul {
+	width: 95%;
+	margin-left: 10px;
+}
+#gameRule li {
+	font-size: 18px;
+	margin: 10px 0;
+	margin-left: 20px;
+}
+
+#gameRule li::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 25px;
+	margin-top: 5px;
+	width: 10px;
+	height: 10px;
+	background-color: #ffd600;
+}
+#closeRules {
+	font-family: "Dangrek", cursive;
+	font-size: 44px;
+	font-weight: 400;
+	position: absolute;
+	background-color: #ff0000;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -30px;
+	right: -20px;
+	cursor: pointer;
+}
